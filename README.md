@@ -1,0 +1,2 @@
+# JsonReader_python
+使用python构建的检验字符流是否符合json语法的项目
