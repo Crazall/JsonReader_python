@@ -43,7 +43,7 @@ s='''30.3'''
 
 d='''true'''
 
-test_string = d
+test_string = r
 
 
 
@@ -55,9 +55,12 @@ def generater():
 
 
 if __name__ == '__main__':
-   import json
-   print(json.loads(d))
+  #  import json
+  #  print(json.loads(d))
   # import re
   # a='-?\d+(\.\d+)?([eE][+-]?\d+)?'
   # if re.match(r'-?\d+(\.\d+)?([eE][+-]?\d+)?', '-23eeeeeeeeeeeee'):
   #    print(1)
+  a = generater()
+  for i in range(10):
+     print(next(a))

@@ -8,7 +8,7 @@ class JsonReader:
     ignore_list = [' ', '\t', '\n']
 
     def __init__(self, a_model_that_can_yield_char):
-        self.char_list = []
+        self.current_char = None
         self.next_char = None
         self.generator = a_model_that_can_yield_char()
 
@@ -16,7 +16,7 @@ class JsonReader:
         self.next_char = char
 
     def clear(self):
-        self.char_list = []
+        self.current_char = None
         self.next_char = None
 
     def __scan(self):
