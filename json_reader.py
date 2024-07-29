@@ -48,7 +48,7 @@ class JsonReader:
                 last_char_can_accept = True
             self.__scan()
 
-        ##json中数字的正则表达式：-?\d+(\.\d+)?([eE][+-]?\d+)?
+        ##json中数字的正则表达式：-?(0|[1-9]\d*)(\.\d+)?([eE][+-]?\d+)?
 
 
     def read_object(self):
